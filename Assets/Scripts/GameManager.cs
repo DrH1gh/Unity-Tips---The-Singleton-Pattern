@@ -8,20 +8,12 @@ public class GameManager : Singleton<GameManager> {
 
     public string redText;
 
-	// Use this for initialization
 	void Start () {
 
-        //Set text
         GameObject moveTextGameObj = GameObject.Find("MoveText");
         Instance.redText = moveTextGameObj.GetComponent<Text>().text;
 
     }
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
-
 
     public void LoadNextLevel()
     {
